@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
 use App\Models\Alunos;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class AlunosController extends Controller
@@ -13,7 +13,7 @@ class AlunosController extends Controller
      */
     public function index()
     {
-        //
+        return json_encode(Alunos::all());
     }
 
     /**
